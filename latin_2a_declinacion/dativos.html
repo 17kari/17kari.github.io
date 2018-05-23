@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<html>
+    <head>
+      <meta charset="utf-8">
+      <meta author="Kari Lajunen">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <title>Latín - La segunda declinación</title>
+
+      <!-- Bootstrap CSS CDN -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- Our Custom CSS -->
+      <link rel="stylesheet" href="css/custom.css">
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <!-- Sidebar Holder -->
+            <nav id="sidebar">
+                <div class="sidebar-header">
+                    <h3>La segunda declinación</h3>
+                </div>
+
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="index.html">La segunda declinación</a>
+                    </li>
+                    <li>
+                        <a href="instrucciones.html" class="subtopic">Instrucciones</a>
+                    </li>
+                    <li>
+                        <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="subtopic">Aprender a reconocer</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li><a href="oraciones_sencillas_1.html">Oraciones sencillas 1</a></li>
+                            <li><a href="oraciones_sencillas_2.html">Oraciones sencillas 2</a></li>
+                            <li><a href="historia_corta.html">Una historia corta</a></li>
+                        </ul>
+                    <li>
+                        <a href="#pageSubmenu2" data-toggle="collapse" aria-expanded="false" class="subtopic">Observar</a>
+                        <ul class="collapse in list-unstyled" id="pageSubmenu2">
+                            <li><a href="nominativos.html">Nominativos</a></li>
+                            <li><a href="acusativos.html">Acusativos</a></li>
+                            <li><a href="genitivos.html">Genitivos</a></li>
+                            <li class="active"><a href="#">Dativos</a></li>
+                            <li><a href="ablativos.html">Ablativos</a></li>
+                            <li><a href="vocativos.html">Vocativos</a></li>
+                            <li><a href="observar_resumen.html">Resumen</a></li>                          
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="tabla.html" class="subtopic">Tabla de declinación</a>
+                    </li>
+                    <li>
+                        <a href="apuntes.html" class="subtopic">Apuntes y observaciones</a>
+                    </li>
+                </ul>
+
+            </nav>
+            <!-- Sidebar -->
+
+            <!-- Page Content Holder -->
+            <div id="content">
+
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+
+                        <div class="navbar-header">
+                            <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
+                                <i class="glyphicon glyphicon-align-left"></i>
+                                <span>Menú</span>
+                            </button>
+                        </div>
+
+                        <div class="navigation-buttons">
+                            <ul class="pager navbar-right">
+                              <li class="previous"><a href="genitivos.html">&larr; Anterior</a></li>
+                              <li class="next"><a href="ablativos.html">Siguiente &rarr;</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <ol class="breadcrumb">
+                  <li><a href="index.html">La segunda declinación</a></li>
+                  <li class="active">Observar - Dativos</li>
+                </ol>
+
+                <h2>Dativos</h2>
+
+                <div class="panel panel-default">
+                  <div class="panel-heading"><strong>Observar grupos de sustantivos y adjetivos</strong></div>
+                  <div class="panel-body">
+                    <ol>
+                      <li>
+                        En la caja de <em><a href="#dativos_panel">Dativos</a></em> hay todos los dativos (los sustantivos y adjetivos) de <em>Aprender a reconocer</em> (<em><a href="oraciones_sencillas_1.html">Oraciones sencillas 1</a></em> y <em><a href="oraciones_sencillas_2.html">Oraciones sencillas 2</a></em>). Intenta observar cuáles de las palabras podrían formar un grupo. Presta atención a las terminaciones de las palabras. Un grupo puede contener tanto sustantivos como adjetivos si tienen algo en común. 
+                      </li>
+                      <li>
+                        Arrastra las palabras en las cajas adecuadas. 
+                      </li>
+                      <li>
+                        Cuando has conseguido arrastrar todas las palabras que pertenecen al mismo grupo, sus terminaciones (o la parte igual de las raices) se muestran en negrita.   
+                      </li>
+                      <li>
+                        Mira las palabras en su contexto en las oraciones y observa si son sustantivos o adjetivos, singulares o plurales, etc.
+                      </li>
+                    </ol> 
+                  </div>
+                </div>                
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    Retroalimentación   
+                  </div>
+                  <div class="panel-body">
+                            <div id="alert_correcto" class="alert alert-success">Retroalimentación de la última palabra arrastrada y soltada en alguna de las cajas.</div> 
+                            <div id="alert_casi_correcto" class="alert alert-info hidden"><strong>¡Muy bien, casi correcto!</strong></div>
+                            <div id="alert_cuidado" class="alert alert-warning hidden"><strong>¡Cuidado!</strong></div> 
+                  </div>
+                </div>
+
+
+
+                <div class="row">
+                  <div class="col-md-4 col-sm-5">                
+                    <div class="panel panel-default">
+                      <div class="panel-body">
+                        <!--div class="row">
+                          <div class="col-md-12"-->
+                            <div class="panel panel-default" id="dativos_panel">
+                              <div class="panel-heading">
+                                Dativos
+                              </div>
+                              <div class="panel-body dative_class">
+                                <ul>
+                                    <li>
+                                      <span id="word_84_dat_pl_masc_2a_decl" draggable="true" ondragstart="dragStart(event)">equis</span>
+                                    </li>
+                                    <li>
+                                      <span id="word_89_dat_sg_masc_2a_decl" draggable="true" ondragstart="dragStart(event)">viro</span>
+                                    </li>
+                                    <li>
+                                      <span id="word_92_dat_pl_masc_2a_decl" draggable="true" ondragstart="dragStart(event)">viris</span>
+                                    </li>
+                                    <li>
+                                      <span id="word_100_dat_sg_masc_2a_decl" draggable="true" ondragstart="dragStart(event)">Gaio</span>
+                                    </li>
+                                </ul>
+                              </div> <!-- panel body dative_class -->
+                            </div>
+                            <!-- Panel dativos panel -->
+                          <!--/div--> <!-- col-md-12-->
+                        <!--/div--> <!-- row --> 
+                       </div>
+                      <!--Panel body -->
+                    </div>
+                    <!-- Panel-->
+                  </div>
+                  <!-- col-md-4 -->
+                  
+                  <div class="col-md-8 col-sm-7">
+                        <div class="panel panel-default">
+                          <div class="panel-body">
+                            <div class="row">
+                              <div class="col-md-6 col-xs-12">
+                                <div class="dropList" ondrop="drop_1(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)">
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      Dativos 1
+                                    </div>
+                                    <div class="panel-body dative_class">
+                                      <ul id="datives_1"></ul>
+                                    </div>
+                                  </div>
+
+                                </div> <!-- DropList -->
+                              </div> <!-- col-md-6 Dativos 1-->
+
+                              <div class="col-md-6 col-xs-12">
+                                <div class="dropList" ondrop="drop_2(event)" ondragover="allowDrop(event)" ondragenter="dragEnter(event)" ondragleave="dragLeave(event)">
+
+                                  <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                      Dativos 2
+                                    </div>
+                                    <div class="panel-body dative_class">
+                                      <ul id="datives_2"></ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> <!-- col-md-6 Dativos 2-->
+
+                            </div> <!-- Row -->
+                          </div> <!--- Panel Body-->
+                        </div> <!-- Panel -->
+                  </div> <!-- col-md-8 -->
+
+                </div> <!-- Rom -->
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    Oraciones sencillas 
+                  </div>                         
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <ol>
+                            
+                                <!-- 1. Magister librum cum pueris leget.-->
+                                <li>
+                                  <span id="word_01_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Magister | nominativo" class="nominative_class">Magister</span>
+                                  <span id="word_02_acc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="librum | acusativo" class="accusative_class">librum</span>
+                                  <span id="word_03_prep">cum</span>
+                                  <span id="word_04_abl_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pueris | ablativo | plural" class="ablative_class">pueris</span>
+                                  <span id="word_05_ver">leget.</span>
+                                </li>
+
+                                <!--- 2. Puer cum magistro ambulat. -->
+                                <li>
+                                  <span id="word_06_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Puer | nominativo" class="nominative_class">Puer</span>
+                                  <span id="word_07_prep">cum</span>
+                                  <span id="word_08_abl_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="magistro | ablativo" class="ablative_class">magistro</span>
+                                  <span id="word_09_ver">ambulat.</span>
+                                </li>
+
+                                <!--- 3. Nauta est pulcher. -->
+                                <li>
+                                  <span id="word_10_nom_sg_masc_1a_decl">Nauta</span>
+                                  <span id="word_11_ver">est</span>
+                                  <span id="word_12_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pulcher | nominativo" class="nominative_class">pulcher.</span>
+                                </li>
+
+                                <!--- 4. Feminae nautas pulchros vident. -->
+                                <li>
+                                  <span id="word_12_nom_pl_fem_1a_decl">Feminae</span>
+                                  <span id="word_13_acc_pl_masc_1a_decl">nautas</span>
+                                  <span id="word_14_acc_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pulchros | acusativo" class="accusative_class" data-toggle="tooltip" data-placement="top" title="pulchros | acusativo" class="accusative_class">pulchros</span>
+                                  <span id="word_15_ver">vident.</span>
+                                </li>
+
+                                <!-- 5. Sine aquā in periculo sumus. -->
+                                <li>
+                                  <span id="word_16_prep">Sine</span>
+                                  <span id="word_17_abl_sg_fem_1a_decl">aquā</span>
+                                  <span id="word_18_prep">in</span>
+                                  <span id="word_19_abl_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="periculo | ablativo" class="ablative_class">periculo</span>
+                                  <span id="word_20_ver">sumus.</span>
+                                </li>
+
+                                <!-- 6. Meus hortus pulcher est. -->
+                                <li>
+                                  <span id="word_21_nom_masc">Meus</span>
+                                  <span id="word_22_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="hortus | nominativo" class="nominative_class">hortus</span>
+                                  <span id="word_23_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pulcher | nominativo" class="nominative_class">pulcher</span>
+                                  <span id="word_24_ver">est.</span>
+                                </li>
+
+                                <!-- 7. Sunt rosae in horto. -->
+                                <li>
+                                  <span id="word_25_ver">Sunt</span>
+                                  <span id="word_26_nom_sg_fem_1a_decl">rosae</span>
+                                  <span id="word_27_prep">in</span>
+                                  <span id="word_28_dat_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="horto | ablativo" class="ablative_class">horto.</span>
+                                </li>
+
+                                <!-- 8. Librum de hortis scribo. -->
+                                <li>
+                                  <span id="word_29_acc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Librum | acusativo" class="accusative_class">Librum</span>
+                                  <span id="word_30_pre">de</span>
+                                  <span id="word_31_abl_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="hortis | ablativo" class="ablative_class">hortis</span>
+                                  <span id="word_32_ver">scribo.</span>
+                                </li>
+
+                                <!-- 9. Bracchium tuum est longum. ????? -->
+                                <li>
+                                  <span id="word_33_acc_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Bracchium | acusativo" class="accusative_class">Bracchium</span>
+                                  <span id="word_34_______">tuum</span>
+                                  <span id="word_35_ver">est</span>
+                                  <span id="word_36_acc_sg_masc_2a_decl_______" data-toggle="tooltip" data-placement="top" title="longum | acusativo" class="accusative_class">longum.</span>
+                                </li>
+
+                                <!-- 10. Agricola est altus et pulcher. ????? -->
+                                <li>
+                                  <span id="word_37_nom_sg_masc_1a_decl">Agricola</span>
+                                  <span id="word_38_ver">est</span>
+                                  <span id="word_39_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="altus | nominativo" class="nominative_class">altus</span>
+                                  <span id="word_40_conj">et</span>
+                                  <span id="word_41_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pulcher | nominativo" class="nominative_class">pulcher.</span>
+                                </li>
+
+                                <!-- 11. Cum Marco et Paulā ambulamus. -->
+                                <li>
+                                  <span id="word_42_prep">Cum</span>
+                                  <span id="word_43_abl_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Marco | ablativo" class="ablative_class">Marco</span>
+                                  <span id="word_44_conj">et</span>
+                                  <span id="word_45_abl_sg_fem_1a_decl">Paulā</span>
+                                  <span id="word_46_ver">ambulamus.</span>
+                                </li>
+
+                                <!-- 12. Cum Marco Paulāque ambulatis. -->
+                                <!--li>
+                                  <span id="word_47_prep">Cum</span>
+                                  <span id="word_48_abl_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Marco | ablativo" class="ablative_class">Marco</span>
+                                  <span id="word_49_abl_sg_fem_1a_decl">Paulāque</span>
+                                  <span id="word_50_ver">ambulatis.</span>
+                                </li-->
+
+                                <!-- 13. Cum viris et feminis ambulo. -->
+                                <li>
+                                  <span id="word_51_prep">Cum</span>
+                                  <span id="word_52_abl_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="viris | ablativo | plural" class="ablative_class">viris</span>
+                                  <span id="word_53_conj">et</span>
+                                  <span id="word_53_abl_pl_fem_1a_decl">feminis</span>
+                                  <span id="word_54_ver">ambulo.</span>
+                                </li>
+
+                                <!-- 14. Sine cibo et aquā non laboratis. -->
+                                <li>
+                                  <span id="word_55_prep">Sine</span>
+                                  <span id="word_56_abl_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="cibo | ablativo" class="ablative_class">cibo</span>
+                                  <span id="word_57_conj">et</span>
+                                  <span id="word_58_abl_sg_fem_1a_decl">aquā</span>
+                                  <span id="word_59_____">non</span>                              
+                                  <span id="word_60_ver">laboratis.</span>
+                                </li>
+
+                                <!-- 15. Agricolam altum in agro video. -->
+                                <li>
+                                  <span id="word_61_acc_sg_masc_1a_decl">Agricolam</span>
+                                  <span id="word_62_acc_sg_masc_1a_decl">altum</span>
+                                  <span id="word_63_prep">in</span>
+                                  <span id="word_64_abl_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="agro | ablativo" class="ablative_class">agro</span>
+                                  <span id="word_65_ver">video.</span>
+                                </li>
+
+                                <!-- 16. Parvi pueri libros de equis legunt. -->
+                                <li>
+                                  <span id="word_66_nom_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Parvi | nominativo | plural" class="nominative_class">Parvi</span>
+                                  <span id="word_67_nom_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pueri | nominativo | plural" class="nominative_class">pueri</span>
+                                  <span id="word_68_acc_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="libros | acusativo | plural" sclass="accusative_class">libros</span>
+                                  <span id="word_69_prep">de</span>
+                                  <span id="word_68_abl_pl_fem_2a_decl" data-toggle="tooltip" data-placement="top" title="equis | ablativo | plural" class="ablative_class">equis</span>
+                                  <span id="word_70_ver">legunt.</span>
+                                </li>
+
+                                <!-- 17. Viri agros agricolarum occupant.  -->
+                                <li>
+                                  <span id="word_71_nom_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Viri | nominativo | plural" class="nominative_class">Viri</span>
+                                  <span id="word_72_acc_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="agros | acusativo | plural" class="accusative_class">agros</span>
+                                  <span id="word_73_gen_pl_masc_1a_decl">agricolarum</span>
+                                  <span id="word_74_ver">occupant.</span>
+                                </li>
+
+                                <!-- Xx. Bellum in Galliā est. -->
+                                <li>
+                                  <span id="word_300_nom_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Bellum | nominativo | neutro" class="nominative_class">Bellum</span>
+                                  <span id="word_301_prep">in</span>
+                                  <span id="word_302_abl_sg_fem_1a_decl">Galliā</span>
+                                  <span id="word_303_ver">est.</span>
+                                </li>
+
+                        </ol>                                                          
+                      </div> <!-- col-md-6 -->
+
+                      <div class="col-md-6">
+                              <ol>
+
+                                <!-- 18. Equum fili vocamus -->
+                                <li>
+                                  <span id="word_75_acc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Equum | acusativo" class="accusative_class">Equum</span>
+                                  <span id="word_76_gen_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="fili | genitivo" class="genetive_class">fili</span>
+                                  <span id="word_77_ver">vocamus.</span>
+                                </li>
+                                <!--- 19. Agricolarum amici occupant terram. -->
+                                <li>
+                                  <span id="word_78_gen_pl_masc_1a_decl">Agricolarum</span>
+                                  <span id="word_79_nom_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="amici | nominativo | plural" class="nominative_class">amici</span>
+                                  <span id="word_80_ver">occupant</span>
+                                  <span id="word_81_acc_sg_fem_1a_decl">terram.</span>
+                                </li>                            
+                                <!-- 20. Agricola cibum equis in agro dat. -->
+                                <li>
+                                  <span id="word_82_nom_sg_masc_1a_decl">Agricola</span>
+                                  <span id="word_83_acc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="cibum | acusativo" class="accusative_class">cibum</span>
+                                  <span id="word_84_dat_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="equis | dativo | plural" class="dative_class">equis</span>
+                                  <span id="word_85_prep">in</span>
+                                  <span id="word_86_abl_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="agro | ablativo" class="ablative_class">agro</span>
+                                  <span id="word_87_ver">dat.</span>
+                                </li>
+                                <!-- 21. Fragum viro do. -->                          
+                                <li>
+                                  <span id="word_88_acc_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Fragum | acusativo" class="accusative_class">Fragum</span>
+                                  <span id="word_89_dat_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="viro | dativo" class="dative_class">viro</span>
+                                  <span id="word_90_ver.">do.</span>
+                                </li>  
+                                <!-- 22. Fraga viris damus. -->                          
+                                <li>
+                                  <span id="word_91_acc_pl_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Fraga | acusativo | plural" class="accusative_class">Fraga</span>
+                                  <span id="word_92_dat_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="viris | dativo | plural" class="dative_class">viris</span>
+                                  <span id="word_93_ver.">damus.</span>                                 
+                                </li>
+
+                                <!-- Xx. Fraga bonae sunt. -->
+                                <li>
+                                  <span id="word_210_nom_pl_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Fraga | nominativo | plural" class="nominative_class">Fraga</span>
+                                  <span id="word_211_nom_pl_fem_">bonae</span>
+                                  <span id="word_212_ver.">sunt.</span>                                 
+                                </li>
+
+                                <!-- 23. Gaius amicus Marci est. -->
+                                <li>
+                                  <span id="word_94_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Gaius | nominativo" class="nominative_class">Gaius</span>
+                                  <span id="word_95_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="amicus | nominativo" class="nominative_class">amicus</span>
+                                  <span id="word_96_gen_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Marci | genitivo" class="genetive_class">Marci</span>
+                                  <span id="word_97_ver.">est.</span>                                 
+                                </li>                  
+                                <!-- 24. Marcus gladium Gaio dat. -->
+                                <li>
+                                  <span id="word_98_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Marcus | nominativo" class="nominative_class">Marcus</span>
+                                  <span id="word_99_acc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="gladium | acusativo" class="accusative_class">gladium</span>
+                                  <span id="word_100_dat_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Gaio | dativo" class="dative_class">Gaio</span>
+                                  <span id="word_101_ver.">dat.</span>                                 
+                                </li> 
+
+                                <!-- xx. Veni huc, Marce! -->
+                                <li>
+                                  <span id="word_200_ver" >Veni</span>
+                                  <span id="word_201___" >huc,</span>
+                                  <span id="word_202_voc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Marce | vocativo" class="vocative_class">Marce!</span>
+                                </li>  
+ 
+                                <!-- 25. Medicus vinum non bibit. -->
+                                <li>
+                                  <span id="word_102_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Medicus | nominativo" class="nominative_class">Medicus</span>
+                                  <span id="word_103_acc_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="vinum | acusativo" class="accusative_class">vinum</span>
+                                  <span id="word_104___">non</span>
+                                  <span id="word_105_ver.">bibit.</span>                                 
+                                </li>
+                                <!-- 26. Dominus servi in foro est. -->
+                                <li>
+                                  <span id="word_106_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Dominus | nominativo" class="nominative_class">Dominus</span>
+                                  <span id="word_107_gen_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="servi | genitivo" class="genetive_class">servi</span>
+                                  <span id="word_108_prep">in</span>
+                                  <span id="word_109_abl_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="foro | ablativo" class="ablative_class">foro</span>
+                                  <span id="word_110_ver.">est.</span>                                 
+                                </li>
+                                <!-- 27. Vir fragum pueri edit. -->
+                                <li>
+                                  <span id="word_111_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Vir | nominativo" class="nominative_class">Vir</span>
+                                  <span id="word_112_acc_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="fragum | acusativo" class="accusative_class">fragum</span>
+                                  <span id="word_113_gen_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="pueri | genitivo" class="genetive_class">pueri</span>
+                                  <span id="word_114_ver">edit.</span>
+                                </li>
+                                <!-- 28. Terram Romanorum videtis. -->
+                                <li>
+                                  <span id="word_115_acc_sg_fem_1a_decl">Terram</span>
+                                  <span id="word_116_gen_pl_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Romanorum | genitivo | plural" class="genetive_class">Romanorum</span>
+                                  <span id="word_117_ver"">videtis.</span>
+                                </li>
+                                <!-- 29. Puellae fraga puerorum edunt. -->
+                                <li>
+                                  <span id="word_118_nom_pl_fem_1a_decl">Puellae</span>
+                                  <span id="word_119_acc_pl_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="fraga | acusativo | plural" class="accusative_class">fraga</span>
+                                  <span id="word_120_gen_pl_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="puerorum | genitivo | plural" class="genetive_class">puerorum</span>
+                                  <span id="word_121_ver"">edunt.</span>                                  
+                                </li>
+                                <!-- 30. Ultimus Romanorum es. -->
+                                <li>
+                                  <span id="word_122_nom_sg_masc_2a_decl" data-toggle="tooltip" data-placement="top" title="Ultimus | nominativo" class="nominative_class">Ultimus</span>
+                                  <span id="word_123_gen_pl_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Romanorum | genitivo | plural" class="genetive_class">Romanorum</span>
+                                  <span id="word_124_ver"">es.</span>
+                                </li>
+                                <!-- 31. Oppidum vestrum videmus. -->
+                                <li>
+                                  <span id="word_125_acc_sg_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="Oppidum | acusativo" class="accusative_class">Oppidum</span>
+                                  <span id="word_126_acc_sg_neut_">vestrum</span>
+                                  <span id="word_127_ver">videmus.</span>
+                                </li>                                
+                                <!-- 32. Sunt multa oppida in Italiā. -->
+                                <li>
+                                  <span id="word_128_ver">Sunt</span>
+                                  <span id="word_129_nom_sg_fem_">multa</span>
+                                  <span id="word_130_acc_pl_neut_2a_decl" data-toggle="tooltip" data-placement="top" title="oppida | acusativo" class="accusative_class">oppida</span>
+                                  <span id="word_131_prep">in</span>
+                                  <span id="word_132_abl_sg_fem_1a_decl">Italiā.</span>
+                                </li>                            
+
+                              </ol>                                                          
+
+                      </div> <!-- col-md-6 -->  
+                    </div> <!-- row -->
+                  </div> <!-- panel body -->
+                </div> <!-- Panel -->
+
+                <div class="navigation-buttons">
+                  <ul class="pager">
+                    <li class="previous"><a href="genitivos.html">&larr; Anterior</a></li>
+                    <li class="next"><a href="ablativos.html">Siguiente &rarr;</a></li>
+                  </ul>
+                </div>
+
+          </div>
+        </div>
+
+
+
+        <!-- jQuery CDN -->
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <!-- Bootstrap Js CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript">
+             $(document).ready(function () {
+                 $('#sidebarCollapse').on('click', function () {
+                     $('#sidebar').toggleClass('active');
+                 });
+             });
+        </script>
+
+        <script>
+          $(document).ready(function() {
+            $('[data-toggle="tooltip"]').tooltip(); 
+          });
+        </script>
+
+
+         <!-- Our own jaascript for drag and drop palabras. -->
+         <script src="js/arrastrar_dat.js"></script>
+
+    </body>
+</html>
