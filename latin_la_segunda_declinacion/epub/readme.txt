@@ -1,0 +1,1 @@
+pandoc apuntes.md -o apuntes.epub -t epub --epub-cover-image=apuntes.png

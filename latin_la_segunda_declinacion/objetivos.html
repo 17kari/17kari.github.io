@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Objetivos</title>
+  </head>
+  <body>
+    <!-- REVEAL -->
+    <div class="reveal">
+      <!-- SLIDES -->
+      <div class="slides">
+
+        <!-- PORTADA -->
+        <section data-background-image="img/mauricio-artieda-453995-unsplash.jpg">
+        	<hr>
+        	<h2>Objetivos</h2>
+          <hr>
+        </section>
+        <!--FIN PORTADA -->
+
+        <!-- Objetivo principal -->
+        <section data-markdown data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_05_hd_pictures_166299.jpg">
+          <script type="text/template">
+            ### Objetivo principal
+            * El objetivo principal de este microcurso es **aprender a reconocer las palabras de la 2ª declinación en oraciones/ textos.** <!-- .element: class="fragment fade-down" data-fragment-index="2" -->
+          </script>
+        </section>
+        <!--FIN Objetivo principal -->
+
+        <!-- El segundo objetivo -->
+        <section data-markdown data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_01_hd_pictures_166302.jpg" id="long_list">
+          <script type="text/template">
+            ## El segundo objetivo
+            * El segundo objetivo es **reforzar la habilidad de notar.** <!-- .element: class="fragment fade-down" data-fragment-index="2" -->
+              * La habilidad de notar es uno de los más importantes factores en cuanto al aprendizaje de idiomas. <!-- .element: class="fragment fade-down" data-fragment-index="3" -->
+              * Intentamos notar cuáles son las terminaciones y raíces de los sustantivos y adjetivos de la 2ª declinación y cuáles son sus significados en el contexto. <!-- .element: class="fragment fade-down" data-fragment-index="4" -->
+              * Gramaticamente hablamos de notar cuáles son los casos de las palabras. <!-- .element: class="fragment fade-down" data-fragment-index="5" -->
+              * De esta manera crece su conocimiento de cómo funciona el latín. <!-- .element: class="fragment fade-down" data-fragment-index="6" -->
+            </script>
+        </section>
+        <!-- FIN El segundo objetivo -->
+
+        <!-- El objetivo no es... -->
+        <section data-markdown data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_01_hd_pictures_166302.jpg">
+          <script type="text/template">
+            ### El objetivo no es...
+            * El objetivo **no** es **memorizar** las terminaciones. <!-- .element: class="fragment fade-down" data-fragment-index="1" -->
+              * En el aprendizaje de idiomas es **importante** **olvidar**. <!-- .element: class="fragment fade-down" data-fragment-index="2" -->
+              * A través del input (leer, escuchar) y, a través del uso, se aprende de memoria largo-plazo. El latín no es ningún excepto. <!-- .element: class="fragment fade-down" data-fragment-index="3" -->
+            </script>
+        </section>
+        <!-- FIN El objetivo no es... -->
+
+        <!-- El objetivo transversal -->
+        <section data-markdown data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_01_hd_pictures_166302.jpg">
+          <script type="text/template">
+            ### El objetivo transversal
+            * El objetivo transversal es ganar confidencia en entender textos cortos en latín.
+            </script>
+        </section>
+        <!-- FIN El objetivo transversal -->
+
+        <!-- Fin de los objetivos -->
+        <section data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_01_hd_pictures_166302.jpg">
+            <h3>Fin de los objetivos</h3>
+            <p>
+              <ul>
+                <li>
+                  Puede cerrar esta presentación y volver a <em>La segunda deglinación</em> pulsando el bóton debajo.
+                </li>
+              </ul>
+            </p>
+
+            <!--a href="#" class="btn btn-primary" role="button" onclick="CloseWindow();return false;">Cierra la pestaña</a-->
+
+            <p>
+              <a href="#" class="btn btn-primary" name="quit" id="quit" onclick="return quitBox('quit');">Cierra esta pestaña</a>
+            </p>
+
+        </section>
+        <!-- FIN Fin de los objetivos -->
+
+
+
+
+      </div>
+      <!-- SLIDES -->
+    </div>
+    <!-- REVEAL -->
+    
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+  
+    <script>
+      Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: false,
+                    keyboard: true,
+                    slideNumber: true,
+                    transition: "linear",
+     
+                    dependencies: [
+                      // Interpret Markdown in <section> elements
+                      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                  });
+    </script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+      function quitBox(cmd)
+      {   
+          if (cmd=='quit')
+          {
+              open(location, '_self').close();
+          }   
+          return false;   
+      }
+    </script>
+
+  </body>
+</html>

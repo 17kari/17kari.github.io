@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="css/reveal.css">
+    <link rel="stylesheet" type="text/css" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Objetivos</title>
+  </head>
+  <body>
+    <!-- REVEAL -->
+    <div class="reveal">
+      <!-- SLIDES -->
+        <div class="slides">
+
+        <!-- PORTADA -->
+        <section data-background-image="img/jessi-pena-514585-unsplash.jpg">
+        	<hr>
+        	<h2>Conocimientos previos</h2>
+          <hr>
+        </section>
+        <!--FIN PORTADA -->
+
+        <!-- Conocimientos previos -->
+        <section data-markdown data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_01_hd_pictures_166302.jpg">
+          <script type="text/template">
+            ### Conocimientos previos
+            * Categorías gramaticales <!-- .element: class="fragment fade-down" data-fragment-index="2" -->
+              * qué es un verbo, sustantivo, adjetivo <!-- .element: class="fragment fade-down" data-fragment-index="3" -->
+            * Saber cuáles son los casos/tipos del latín <!-- .element: class="fragment fade-down" data-fragment-index="4" -->
+            * Saber reconocer palabras de la 1ª declinación <!-- .element: class="fragment fade-down" data-fragment-index="5" -->
+            * La sintaxis básica de las oraciones en latín <!-- .element: class="fragment fade-down" data-fragment-index="6" -->
+            * Un nivel mínimo de conocimientos de Lengua equivalente a 3º ESO <!-- .element: class="fragment fade-down" data-fragment-index="7" -->
+          </script>
+        </section>
+        <!--FIN Conocimientos previos -->
+
+
+        <!-- Fin de los conocimientos previos -->
+        <section data-background-image="http://images.all-free-download.com/images/graphiclarge/hd_sky_picture_01_hd_pictures_166302.jpg">
+            <h3>Fin de los conocimientos previos</h3>
+            <p>
+              <ul>
+                <li>
+                  Puede cerrar esta presentación y volver a <em>La segunda deglinación</em> pulsando el bóton debajo.
+                </li>
+              </ul>
+            </p>
+            <p>
+              <a href="#" class="btn btn-primary" name="quit" id="quit" onclick="return quitBox('quit');">Cierra esta pestaña</a>
+            </p>
+        </section>
+        <!-- FIN Fin de los objetivos -->
+
+
+      </div>
+      <!-- SLIDES -->
+    </div>
+    <!-- REVEAL -->
+    
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+  
+    <script>
+      Reveal.initialize({
+                    controls: true,
+                    progress: true,
+                    history: false,
+                    keyboard: true,
+                    slideNumber: true,
+                    transition: "linear",
+     
+                    dependencies: [
+                      // Interpret Markdown in <section> elements
+                      { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                      { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    ]
+                  });
+    </script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!-- Bootstrap Js CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+    <script type="text/javascript">
+      function quitBox(cmd)
+      {   
+          if (cmd=='quit')
+          {
+              open(location, '_self').close();
+          }   
+          return false;   
+      }
+    </script>
+
+  </body>
+</html>
